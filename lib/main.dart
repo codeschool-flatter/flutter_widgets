@@ -2,5 +2,9 @@ import 'package:flutter/material.dart';
 
 void main() {
   Container x = Container();
-  runApp(x);
+  Text txt = Text(
+    'Hello World',
+    textDirection: TextDirection.ltr,
+  );
+  runApp(txt);
 }
