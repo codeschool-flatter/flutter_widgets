@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 void main() {
   Container x = Container(
     color: Colors.blueAccent,
-    margin: EdgeInsets.all(30),
+    margin: const EdgeInsets.fromLTRB(
+      70,
+      40,
+      40,
+      80,
+    ),
   );
 
   runApp(x);
