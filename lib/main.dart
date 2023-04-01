@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  Text txt = const Text(
-    'CODE',
-    textDirection: TextDirection.ltr,
+// Create blue Container
+  Container blue = Container(
+    color: Colors.blue,
+    margin: const EdgeInsets.all(50.0),
   );
-  Container x = Container(
-    color: Colors.blueAccent,
-    margin: const EdgeInsets.all(50),
-    child: txt,
+// Create red Container with blue child
+  Container red = Container(
+    color: Colors.red,
+    child: blue,
+    margin: const EdgeInsets.all(10.0),
   );
-
-  runApp(x);
+  runApp(red);
 }
