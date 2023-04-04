@@ -5,18 +5,13 @@ void main() {
 
 // Create red Container with blue child
   Container red = Container(
-    color: Colors.red,
-    child: const Text(
-      'CODEACADEMY',
-      textDirection: TextDirection.ltr,
-      style: TextStyle(
-        fontSize: 30.0,
-        color: Colors.white,
-      ),
-    ),
-    alignment: Alignment.bottomLeft,
-    // margin: const EdgeInsets.all(50.0),
-    padding: const EdgeInsets.all(10.0),
+    // color: Colors.red,
+    decoration: BoxDecoration(
+        color: Colors.lightBlueAccent,
+        border: Border.all(
+          width: 15.0,
+          color: Colors.white,
+        )),
   );
   runApp(red);
 }
